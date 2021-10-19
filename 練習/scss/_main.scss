@@ -1,0 +1,56 @@
+body {
+  font-family: $font-family-base;
+}
+
+.container {
+  max-width: $max-width;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.header {
+  width: 500px;
+  @include pc {
+    background: #000;
+  }
+  @include pad {
+    width: 100px;
+    font-size: 15px;
+    background: #000;
+  }
+  @include mobile {
+    width: 50px;
+    font-size: 10px;
+    background: #231;
+  }
+  a {
+    color: blue;
+    @include mobile {
+      color: red;
+    }
+  }
+}
+
+.banner {
+  border: 5px solid green;
+}
+
+.section {
+  color: $text-color;
+  h2 {
+    @include title-l;
+  }
+  a {
+    @include link;
+    &:hover {
+      @include link-hover;
+    }
+  }
+  .card {
+    h3 {
+      @include color(#00aa33);
+    }
+  }
+}

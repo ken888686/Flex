@@ -1,0 +1,38 @@
+@mixin title-l {
+  font-size: 26px;
+  color: $theme-color;
+}
+
+@mixin link {
+  text-decoration: none;
+  color: $theme-color;
+}
+
+@mixin link-hover {
+  background: $theme-color;
+  color: white;
+}
+
+@mixin color($color) {
+  background: $color;
+}
+
+//
+
+@mixin pc {
+  @media (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin pad {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 568px) {
+    @content;
+  }
+}

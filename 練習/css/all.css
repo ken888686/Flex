@@ -1,0 +1,80 @@
+body {
+  font-family: "PingFang TC";
+}
+
+.container {
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.header {
+  width: 500px;
+}
+
+@media (max-width: 1199px) {
+  .header {
+    background: #000;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    width: 100px;
+    font-size: 15px;
+    background: #000;
+  }
+}
+
+@media (max-width: 568px) {
+  .header {
+    width: 50px;
+    font-size: 10px;
+    background: #231;
+  }
+}
+
+.header a {
+  color: blue;
+}
+
+@media (max-width: 568px) {
+  .header a {
+    color: red;
+  }
+}
+
+.banner {
+  border: 5px solid green;
+}
+
+.section {
+  color: #009961;
+}
+
+.section h2 {
+  font-size: 26px;
+  color: #00ffa2;
+}
+
+.section a {
+  text-decoration: none;
+  color: #00ffa2;
+}
+
+.section a:hover {
+  background: #00ffa2;
+  color: white;
+}
+
+.section .card h3 {
+  background: #00aa33;
+}
+/*# sourceMappingURL=all.css.map */

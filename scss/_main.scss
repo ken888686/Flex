@@ -1,0 +1,171 @@
+html {
+  font-size: $fs-base;
+  font-weight: bold;
+  color: $theme-color;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: $theme-color;
+}
+
+.fs-1 {
+  font-size: $fs-1;
+}
+.fs-2 {
+  font-size: $fs-2;
+}
+.fs-3 {
+  font-size: $fs-3;
+}
+.fs-4 {
+  font-size: $fs-4;
+}
+.fs-5 {
+  font-size: $fs-5;
+}
+.fs-6 {
+  font-size: $fs-6;
+}
+
+.active {
+  background: $theme-color-light;
+}
+
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  img {
+    height: 40px;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      a {
+        padding-top: 10px;
+        padding-bottom: 8px;
+        padding-right: 60px;
+        &:hover {
+          border-bottom: 5px solid $theme-color;
+          background: $theme-color-light;
+        }
+      }
+    }
+    .shopping-cart {
+      margin-left: 19px;
+    }
+    img {
+      height: 24px;
+    }
+  }
+}
+
+.banner {
+  margin-bottom: 60px;
+}
+
+.title {
+  background: $theme-color;
+  color: $theme-color-light;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  .category {
+    width: 300px;
+    margin-right: 20px;
+    text-align: center;
+    font-size: $fs-4;
+    h4 {
+      display: block;
+      height: 65px;
+      line-height: 65px;
+    }
+    li {
+      border: 1px solid $theme-color-light;
+    }
+    a {
+      height: 65px;
+      line-height: 65px;
+      text-align: center;
+      &:hover {
+        background: $theme-color-light;
+      }
+    }
+  }
+}
+
+.content {
+  .product {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    flex-wrap: wrap;
+    li {
+      div {
+        width: 300px;
+        height: 315px;
+        background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-1.png?raw=true");
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        padding-left: 20px;
+        padding-right: 22px;
+        span {
+          color: $theme-color-light;
+          padding: 10px;
+          writing-mode: vertical-rl;
+          background: $theme-color;
+          letter-spacing: 5px;
+        }
+        img {
+          margin-top: 19px;
+          height: fit-content;
+        }
+      }
+      .product-description {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li {
+          height: 56px;
+          line-height: 56px;
+          border-bottom: 1px solid $theme-color-light;
+          border-right: 1px solid $theme-color-light;
+          border-left: 1px solid $theme-color-light;
+          font-size: $fs-5;
+        }
+        .product-name {
+          flex-grow: 2;
+        }
+        .product-price {
+          flex-grow: 1;
+        }
+      }
+      a {
+        text-align: center;
+        height: 65px;
+        line-height: 65px;
+        font-size: $fs-3;
+        background: $theme-color-light;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

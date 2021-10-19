@@ -1,0 +1,387 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  font-size: 16px;
+  font-weight: bold;
+  color: #3f5d45;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #3f5d45;
+}
+
+.fs-1 {
+  font-size: 2.5rem;
+}
+
+.fs-2 {
+  font-size: 2rem;
+}
+
+.fs-3 {
+  font-size: 1.75rem;
+}
+
+.fs-4 {
+  font-size: 1.5rem;
+}
+
+.fs-5 {
+  font-size: 1.25rem;
+}
+
+.fs-6 {
+  font-size: 1rem;
+}
+
+.active {
+  background: #eaf0ed;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.header img {
+  height: 40px;
+}
+
+.header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .menu ul a {
+  padding-top: 10px;
+  padding-bottom: 8px;
+  padding-right: 60px;
+}
+
+.header .menu ul a:hover {
+  border-bottom: 5px solid #3f5d45;
+  background: #eaf0ed;
+}
+
+.header .menu .shopping-cart {
+  margin-left: 19px;
+}
+
+.header .menu img {
+  height: 24px;
+}
+
+.banner {
+  margin-bottom: 60px;
+}
+
+.title {
+  background: #3f5d45;
+  color: #eaf0ed;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content .category {
+  width: 300px;
+  margin-right: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.content .category h4 {
+  display: block;
+  height: 65px;
+  line-height: 65px;
+}
+
+.content .category li {
+  border: 1px solid #eaf0ed;
+}
+
+.content .category a {
+  height: 65px;
+  line-height: 65px;
+  text-align: center;
+}
+
+.content .category a:hover {
+  background: #eaf0ed;
+}
+
+.content .product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 620px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content .product li div {
+  width: 300px;
+  height: 315px;
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-1.png?raw=true");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding-left: 20px;
+  padding-right: 22px;
+}
+
+.content .product li div span {
+  color: #eaf0ed;
+  padding: 10px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  background: #3f5d45;
+  letter-spacing: 5px;
+}
+
+.content .product li div img {
+  margin-top: 19px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.content .product li .product-description {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .product li .product-description li {
+  height: 56px;
+  line-height: 56px;
+  border-bottom: 1px solid #eaf0ed;
+  border-right: 1px solid #eaf0ed;
+  border-left: 1px solid #eaf0ed;
+  font-size: 1.25rem;
+}
+
+.content .product li .product-description .product-name {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.content .product li .product-description .product-price {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.content .product li a {
+  text-align: center;
+  height: 65px;
+  line-height: 65px;
+  font-size: 1.75rem;
+  background: #eaf0ed;
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=all.css.map */
