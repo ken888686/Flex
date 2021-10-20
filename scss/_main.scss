@@ -1,34 +1,34 @@
-@mixin flex-align-items-center {
-  display: flex;
-  align-items: center;
-}
-
 .header {
-  @include flex-align-items-center;
-  justify-content: space-between;
+  @include flex-align-items-center {
+    justify-content: space-between;
+  }
   margin-top: 30px;
   margin-bottom: 30px;
   img {
     height: 40px;
   }
   .menu {
-    @include flex-align-items-center;
-    justify-content: space-between;
+    @include flex-align-items-center {
+      justify-content: space-between;
+    }
     ul {
-      @include flex-align-items-center;
-      justify-content: start;
+      @include flex-align-items-center {
+        justify-content: start;
+      }
       a {
         padding-top: 10px;
         padding-bottom: 8px;
         padding-right: 60px;
-        &:hover {
+        @include hover-light {
           border-bottom: 5px solid $theme-color;
-          background: $theme-color-light;
         }
       }
     }
     .shopping-cart {
       margin-left: 19px;
+      @include hover-pic-light(
+        "https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true"
+      );
     }
     img {
       height: 24px;
@@ -41,13 +41,13 @@
 }
 
 .title {
-  background: $theme-color;
-  color: $theme-color-light;
+  @include bg-dark;
 }
 
 .content {
-  display: flex;
-  justify-content: space-between;
+  @include flex {
+    justify-content: space-between;
+  }
   .category {
     width: 300px;
     margin-right: 20px;
@@ -59,22 +59,21 @@
       line-height: 65px;
     }
     li {
-      border: 1px solid $theme-color-light;
+      @include border-light;
     }
     a {
       height: 65px;
       line-height: 65px;
       text-align: center;
-      &:hover {
-        background: $theme-color-light;
-      }
+      @include hover-light;
     }
   }
   .product {
-    display: flex;
-    justify-content: space-between;
+    @include flex {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
     width: 620px;
-    flex-wrap: wrap;
     margin-bottom: 20px;
     .product-info {
       margin-bottom: 10px;
@@ -84,12 +83,11 @@
         height: 315px;
         span {
           position: absolute;
-          color: $theme-color-light;
+          left: 20px;
           padding: 10px;
           writing-mode: vertical-rl;
-          background: $theme-color;
+          @include bg-dark;
           letter-spacing: 5px;
-          left: 20px;
         }
         a {
           display: contents;
@@ -103,14 +101,13 @@
       }
       .product-description {
         text-align: center;
-        @include flex-align-items-center;
-        justify-content: space-between;
+        @include flex-align-items-center {
+          justify-content: space-between;
+        }
         li {
           height: 56px;
           line-height: 56px;
-          border-bottom: 1px solid $theme-color-light;
-          border-right: 1px solid $theme-color-light;
-          border-left: 1px solid $theme-color-light;
+          @include border-light;
           font-size: $fs-5;
         }
         .product-name {
@@ -126,42 +123,39 @@
         line-height: 65px;
         font-size: $fs-3;
         background: $theme-color-light;
-        &:hover {
-          color: $theme-color-light;
-          background: $theme-color;
-        }
+        @include hover-dark;
       }
     }
   }
 }
 
 .pagination {
-  @include flex-align-items-center;
-  justify-content: end;
+  @include flex-align-items-center {
+    justify-content: end;
+  }
   margin-top: 10px;
+  margin-bottom: 60px;
   text-align: center;
   font-size: $fs-5;
   li {
-    border: 1px solid $theme-color-light;
-    .previous {
-      background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_left.png?raw=true");
-      background-repeat: no-repeat;
-      background-position: center center;
-    }
-    .next {
-      background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_right.png?raw=true");
-      background-repeat: no-repeat;
-      background-position: center center;
-    }
+    @include border-light;
+
     a {
-      @include flex-align-items-center;
-      justify-content: center;
+      @include flex-align-items-center {
+        justify-content: center;
+      }
       height: 60px;
       width: 60px;
-      &:hover {
-        background-color: $theme-color-light;
-        color: $theme-color;
-      }
+      @include hover-light;
+    }
+
+    .previous {
+      background: url($previous-arrow) no-repeat center center;
+      @include hover-pic-light($previous-arrow);
+    }
+    .next {
+      background: url($next-arrow) no-repeat center center;
+      @include hover-pic-light($next-arrow);
     }
   }
 }

@@ -245,12 +245,20 @@ a {
 }
 
 .header .menu ul a:hover {
-  border-bottom: 5px solid #3f5d45;
   background: #eaf0ed;
+  color: #3f5d45;
+  border-bottom: 5px solid #3f5d45;
 }
 
 .header .menu .shopping-cart {
   margin-left: 19px;
+}
+
+.header .menu .shopping-cart:hover {
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true"), #eaf0ed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-blend-mode: multiply;
 }
 
 .header .menu img {
@@ -300,18 +308,19 @@ a {
 
 .content .category a:hover {
   background: #eaf0ed;
+  color: #3f5d45;
 }
 
 .content .product {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 620px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin-bottom: 20px;
 }
 
@@ -327,14 +336,14 @@ a {
 
 .content .product .product-info .product-img span {
   position: absolute;
-  color: #eaf0ed;
+  left: 20px;
   padding: 10px;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   background: #3f5d45;
+  color: #eaf0ed;
   letter-spacing: 5px;
-  left: 20px;
 }
 
 .content .product .product-info .product-img a {
@@ -366,9 +375,7 @@ a {
 .content .product .product-info .product-description li {
   height: 56px;
   line-height: 56px;
-  border-bottom: 1px solid #eaf0ed;
-  border-right: 1px solid #eaf0ed;
-  border-left: 1px solid #eaf0ed;
+  border: 1px solid #eaf0ed;
   font-size: 1.25rem;
 }
 
@@ -393,8 +400,8 @@ a {
 }
 
 .content .product .product-info a:hover {
-  color: #eaf0ed;
   background: #3f5d45;
+  color: #eaf0ed;
 }
 
 .pagination {
@@ -408,24 +415,13 @@ a {
       -ms-flex-pack: end;
           justify-content: end;
   margin-top: 10px;
+  margin-bottom: 60px;
   text-align: center;
   font-size: 1.25rem;
 }
 
 .pagination li {
   border: 1px solid #eaf0ed;
-}
-
-.pagination li .previous {
-  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_left.png?raw=true");
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.pagination li .next {
-  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_right.png?raw=true");
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 
 .pagination li a {
@@ -443,7 +439,29 @@ a {
 }
 
 .pagination li a:hover {
-  background-color: #eaf0ed;
+  background: #eaf0ed;
   color: #3f5d45;
+}
+
+.pagination li .previous {
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_left.png?raw=true") no-repeat center center;
+}
+
+.pagination li .previous:hover {
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_left.png?raw=true"), #eaf0ed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-blend-mode: multiply;
+}
+
+.pagination li .next {
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_right.png?raw=true") no-repeat center center;
+}
+
+.pagination li .next:hover {
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_right.png?raw=true"), #eaf0ed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-blend-mode: multiply;
 }
 /*# sourceMappingURL=all.css.map */
