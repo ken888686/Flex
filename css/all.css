@@ -312,26 +312,21 @@ a {
   width: 620px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
-.content .product li div {
+.content .product .product-info {
+  margin-bottom: 10px;
+}
+
+.content .product .product-info .product-img {
+  position: relative;
   width: 300px;
   height: 315px;
-  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-1.png?raw=true");
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  padding-left: 20px;
-  padding-right: 22px;
 }
 
-.content .product li div span {
+.content .product .product-info .product-img span {
+  position: absolute;
   color: #eaf0ed;
   padding: 10px;
   -webkit-writing-mode: vertical-rl;
@@ -339,20 +334,23 @@ a {
           writing-mode: vertical-rl;
   background: #3f5d45;
   letter-spacing: 5px;
+  left: 20px;
 }
 
-.content .product li div a {
+.content .product .product-info .product-img a {
   display: contents;
 }
 
-.content .product li div img {
-  margin-top: 19px;
+.content .product .product-info .product-img a img {
+  position: absolute;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  top: 19px;
+  right: 22px;
 }
 
-.content .product li .product-description {
+.content .product .product-info .product-description {
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,7 +363,7 @@ a {
           justify-content: space-between;
 }
 
-.content .product li .product-description li {
+.content .product .product-info .product-description li {
   height: 56px;
   line-height: 56px;
   border-bottom: 1px solid #eaf0ed;
@@ -374,25 +372,29 @@ a {
   font-size: 1.25rem;
 }
 
-.content .product li .product-description .product-name {
+.content .product .product-info .product-description .product-name {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
 }
 
-.content .product li .product-description .product-price {
+.content .product .product-info .product-description .product-price {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
-.content .product li a {
+.content .product .product-info a {
   text-align: center;
   height: 65px;
   line-height: 65px;
   font-size: 1.75rem;
   background: #eaf0ed;
-  margin-bottom: 20px;
+}
+
+.content .product .product-info a:hover {
+  color: #eaf0ed;
+  background: #3f5d45;
 }
 
 .pagination {

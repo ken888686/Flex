@@ -75,29 +75,30 @@
     justify-content: space-between;
     width: 620px;
     flex-wrap: wrap;
-    li {
-      div {
+    margin-bottom: 20px;
+    .product-info {
+      margin-bottom: 10px;
+      .product-img {
+        position: relative;
         width: 300px;
         height: 315px;
-        background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-1.png?raw=true");
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
-        padding-left: 20px;
-        padding-right: 22px;
         span {
+          position: absolute;
           color: $theme-color-light;
           padding: 10px;
           writing-mode: vertical-rl;
           background: $theme-color;
           letter-spacing: 5px;
+          left: 20px;
         }
         a {
           display: contents;
-        }
-        img {
-          margin-top: 19px;
-          height: fit-content;
+          img {
+            position: absolute;
+            height: fit-content;
+            top: 19px;
+            right: 22px;
+          }
         }
       }
       .product-description {
@@ -125,7 +126,10 @@
         line-height: 65px;
         font-size: $fs-3;
         background: $theme-color-light;
-        margin-bottom: 20px;
+        &:hover {
+          color: $theme-color-light;
+          background: $theme-color;
+        }
       }
     }
   }
