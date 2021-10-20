@@ -12,15 +12,6 @@ a {
 
 .container {
   max-width: $max-width;
-  @include tablet {
-    max-width: $max-width * 0.9;
-  }
-  @include pad {
-    max-width: $max-width * 0.75;
-  }
-  @include mobile {
-    max-width: $max-width * 0.55;
-  }
   margin: 0 auto;
 }
 
@@ -50,6 +41,9 @@ a {
     ul {
       @include flex-align-items-center {
         justify-content: start;
+      }
+      @include mobile {
+        display: none;
       }
       a {
         padding: 10px 60px 8px 0;
@@ -84,7 +78,7 @@ a {
   @include tablet {
     padding: 0 10px;
   }
-
+  text-align: center;
   .category {
     width: $card-width;
     font-size: $fs-4;
@@ -94,8 +88,10 @@ a {
       font-size: $fs-5;
       @include line-height($column-height-2);
     }
+    @include mobile {
+      display: none;
+    }
     margin-right: 20px;
-    text-align: center;
     span {
       display: block;
       @include bg-dark;
@@ -116,17 +112,31 @@ a {
       @include tablet {
         justify-content: space-around;
       }
+      @include mobile {
+        justify-content: center;
+      }
     }
     .product-info {
-      text-align: center;
       width: $card-width;
       margin-bottom: 20px;
       @include tablet {
         width: $card-width * 0.85;
         margin-bottom: 15px;
       }
-      .product-img {
+      @include pad {
+        margin: 0 5px 5px 5px;
+      }
+      @include mobile {
+        margin-bottom: 10px;
+        width: 100%;
+      }
+      div {
         position: relative;
+        .product-img {
+          @include mobile {
+            width: 100%;
+          }
+        }
         span {
           position: absolute;
           left: 20px;

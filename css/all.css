@@ -163,24 +163,6 @@ a {
   margin: 0 auto;
 }
 
-@media (max-width: 991px) {
-  .container {
-    max-width: 846px;
-  }
-}
-
-@media (max-width: 767px) {
-  .container {
-    max-width: 705px;
-  }
-}
-
-@media (max-width: 575px) {
-  .container {
-    max-width: 517px;
-  }
-}
-
 .active {
   background: #3f5d45;
   color: #eaf0ed;
@@ -238,6 +220,12 @@ a {
           justify-content: start;
 }
 
+@media (max-width: 575px) {
+  .header .menu ul {
+    display: none;
+  }
+}
+
 .header .menu ul a {
   padding: 10px 60px 8px 0;
 }
@@ -280,6 +268,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  text-align: center;
 }
 
 @media (max-width: 991px) {
@@ -294,7 +283,6 @@ a {
   height: 65px;
   line-height: 65px;
   margin-right: 20px;
-  text-align: center;
 }
 
 @media (max-width: 991px) {
@@ -303,6 +291,12 @@ a {
     font-size: 1.25rem;
     height: 56px;
     line-height: 56px;
+  }
+}
+
+@media (max-width: 575px) {
+  .content .category {
+    display: none;
   }
 }
 
@@ -340,8 +334,15 @@ a {
   }
 }
 
+@media (max-width: 575px) {
+  .content .product {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .content .product .product-info {
-  text-align: center;
   width: 300px;
   margin-bottom: 20px;
 }
@@ -353,11 +354,30 @@ a {
   }
 }
 
-.content .product .product-info .product-img {
+@media (max-width: 767px) {
+  .content .product .product-info {
+    margin: 0 5px 5px 5px;
+  }
+}
+
+@media (max-width: 575px) {
+  .content .product .product-info {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+
+.content .product .product-info div {
   position: relative;
 }
 
-.content .product .product-info .product-img span {
+@media (max-width: 575px) {
+  .content .product .product-info div .product-img {
+    width: 100%;
+  }
+}
+
+.content .product .product-info div span {
   position: absolute;
   left: 20px;
   padding: 10px;
@@ -369,11 +389,11 @@ a {
   letter-spacing: 5px;
 }
 
-.content .product .product-info .product-img a {
+.content .product .product-info div a {
   display: contents;
 }
 
-.content .product .product-info .product-img a img {
+.content .product .product-info div a img {
   position: absolute;
   top: 19px;
   right: 22px;
